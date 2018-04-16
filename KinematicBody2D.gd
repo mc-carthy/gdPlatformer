@@ -9,6 +9,7 @@ const JUMP_SPEED = -500
 var motion = Vector2(0, 0)
 
 func _physics_process(delta):
+	var friction = false
 	if Input.is_action_pressed('ui_right'):
 		motion.x = min(motion.x + ACC, MAX_SPEED)
 		$Sprite.flip_h = false
@@ -18,15 +19,19 @@ func _physics_process(delta):
 		$Sprite.flip_h = true
 		$Sprite.play('run')
 	else:
-		motion.x = lerp(motion.x, 0, 0.2)
+		friction = true
 		$Sprite.play('idle')
 	
 	if is_on_floor():
 		if Input.is_action_just_released('ui_up'):
 			motion.y = JUMP_SPEED
+		if friction == true:
+			motion.x = lerp(motion.x, 0, 0.2)
 	else:
 		$Sprite.play('jump')
 		motion.y += GRAVITY
+		if friction == true:
+			motion.x = lerp(motion.x, 0, 0.05)
 	move_and_slide(motion, UP)
 	pass
 
