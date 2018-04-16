@@ -23,7 +23,7 @@ func _physics_process(delta):
 		$Sprite.play('idle')
 	
 	if is_on_floor():
-		if Input.is_action_just_released('ui_up'):
+		if Input.is_action_just_pressed('ui_up'):
 			motion.y = JUMP_SPEED
 		if friction == true:
 			motion.x = lerp(motion.x, 0, 0.2)
