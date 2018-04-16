@@ -28,7 +28,10 @@ func _physics_process(delta):
 		if friction == true:
 			motion.x = lerp(motion.x, 0, 0.2)
 	else:
-		$Sprite.play('jump')
+		if motion.y < 0:
+			$Sprite.play('jump')
+		else:
+			$Sprite.play('fall')
 		motion.y += GRAVITY
 		if friction == true:
 			motion.x = lerp(motion.x, 0, 0.05)
