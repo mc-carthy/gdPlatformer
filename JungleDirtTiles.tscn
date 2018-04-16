@@ -2,12 +2,12 @@
 
 [ext_resource path="res://Sprites/Tiles/JungleDirtTileSet.png" type="Texture" id=1]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
+extents = Vector2( 32, 32 )
 
-[node name="JungleDirtTiles" type="Node" index="0"]
+[node name="JungleDirtTiles" type="Node"]
 
 [node name="0" type="Sprite" parent="." index="0"]
 
@@ -22,6 +22,8 @@ __meta__ = {
 
 [node name="StaticBody2D" type="StaticBody2D" parent="0" index="0"]
 
+position = Vector2( 16, 16 )
+scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -33,9 +35,7 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="0/StaticBody2D" index="0"]
 
 visible = false
-position = Vector2( 16, 16 )
-shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
+shape = SubResource( 2 )
 
 [node name="1" type="Sprite" parent="." index="1"]
 
@@ -51,6 +51,8 @@ __meta__ = {
 
 [node name="StaticBody2D" type="StaticBody2D" parent="1" index="0"]
 
+position = Vector2( 16, 16 )
+scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -62,9 +64,7 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="1/StaticBody2D" index="0"]
 
 visible = false
-position = Vector2( 16, 16 )
-shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
+shape = SubResource( 2 )
 
 [node name="2" type="Sprite" parent="." index="2"]
 
@@ -80,6 +80,8 @@ __meta__ = {
 
 [node name="StaticBody2D" type="StaticBody2D" parent="2" index="0"]
 
+position = Vector2( 16, 16 )
+scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -91,9 +93,7 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="2/StaticBody2D" index="0"]
 
 visible = false
-position = Vector2( 16, 16 )
-shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
+shape = SubResource( 2 )
 
 [node name="3" type="Sprite" parent="." index="3"]
 
@@ -109,6 +109,8 @@ __meta__ = {
 
 [node name="StaticBody2D" type="StaticBody2D" parent="3" index="0"]
 
+position = Vector2( 16, 16 )
+scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -120,9 +122,7 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="3/StaticBody2D" index="0"]
 
 visible = false
-position = Vector2( 16, 16 )
-shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
+shape = SubResource( 2 )
 
 [node name="4" type="Sprite" parent="." index="4"]
 
@@ -138,6 +138,8 @@ __meta__ = {
 
 [node name="StaticBody2D" type="StaticBody2D" parent="4" index="0"]
 
+position = Vector2( 16, 16 )
+scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -149,9 +151,7 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="4/StaticBody2D" index="0"]
 
 visible = false
-position = Vector2( 16, 16 )
-shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
+shape = SubResource( 2 )
 
 [node name="5" type="Sprite" parent="." index="5"]
 
@@ -167,6 +167,8 @@ __meta__ = {
 
 [node name="StaticBody2D" type="StaticBody2D" parent="5" index="0"]
 
+position = Vector2( 16, 16 )
+scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -178,9 +180,7 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="5/StaticBody2D" index="0"]
 
 visible = false
-position = Vector2( 16, 16 )
-shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
+shape = SubResource( 2 )
 
 [node name="6" type="Sprite" parent="." index="6"]
 
@@ -196,6 +196,8 @@ __meta__ = {
 
 [node name="StaticBody2D" type="StaticBody2D" parent="6" index="0"]
 
+position = Vector2( 16, 16 )
+scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -207,9 +209,7 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="6/StaticBody2D" index="0"]
 
 visible = false
-position = Vector2( 16, 16 )
-shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
+shape = SubResource( 2 )
 
 [node name="7" type="Sprite" parent="." index="7"]
 
@@ -225,6 +225,8 @@ __meta__ = {
 
 [node name="StaticBody2D" type="StaticBody2D" parent="7" index="0"]
 
+position = Vector2( 16, 16 )
+scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -236,9 +238,7 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="7/StaticBody2D" index="0"]
 
 visible = false
-position = Vector2( 16, 16 )
-shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
+shape = SubResource( 2 )
 
 [node name="8" type="Sprite" parent="." index="8"]
 
@@ -254,6 +254,8 @@ __meta__ = {
 
 [node name="StaticBody2D" type="StaticBody2D" parent="8" index="0"]
 
+position = Vector2( 16, 16 )
+scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -265,8 +267,6 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="8/StaticBody2D" index="0"]
 
 visible = false
-position = Vector2( 16, 16 )
-shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
+shape = SubResource( 2 )
 
 
